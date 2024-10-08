@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharashtra's Heritage</title>
+
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    font-family: "Roboto" , sans-serif;
+    background-color: rgba(236, 235, 235, 0.6);
+}
+
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1400px;
+    margin-inline: auto;
+    overflow: hidden;
+    background-color:#FDFDFD;
+}
+
+
+    /* nav bar */
+
+.navbar-container{
+    background-color: orange;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    min-width: 60vh;
+    position: relative;
+}
+.navbar-container a{
+    color: white;
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+/* .nav-logo img{
+    width: 250px;
+    margin-top: 10px;
+} */
+
+.nav-logo h1{
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.7rem;
+    font-weight:bold;
+}
+.nav-logo span{
+    color: #FDFDFD;
+}
+.nav-logo .logo-s-colorchange{
+    color: red;
+    font-size: 2rem;
+    margin-right: 3px;
+}
+
+.nav-links{
+    gap: 50px;
+}
+.nav-links a{
+    margin-top: 10px;
+}
+
+.nav-links a:focus{
+    text-decoration: underline;
+}
+
+.nav-links ul{
+    min-width: 0px;
+}
+/* .nav-links a{
+    min-width: 100px;
+} */
+.nav-links a:hover{
+    color:rgba(128, 128, 128, 0.912);
+    transition: 0.4s ease;
+    transform: scale(1.1);
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.sign-btn button{
+    padding: 10px 22px;
+    margin-right: 10px;
+    background-color: #fdfdfd;
+    border: none;
+    outline: none;
+    color: orange;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 550;
+    transition: 0.2s ease;
+}
+.sign-btn button:hover{
+    background-color:cornflowerblue;
+    color: white;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1);
+}
+.sign-btn button:active{
+    background-color:rgb(49, 120, 253);
+}
+
+
+/* header */
+
+.header-img img{
+    width: 100%;
+    height: 625px;
+    object-fit: cover;
+}
+.header-container{
+    position: relative;
+}
+.about-heading{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.about-heading h1{
+    font-size: 3.8rem;
+    color: white;
+}
+
+/* main-container */
+
+.main-container{
+    line-height: 25px;
+
+}
+.main-container p{
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.main-container h2{
+    color: rgb(52, 52, 208);
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.about-us{
+    background-color:rgba(255, 99, 71, 0.893);
+    margin-block: 40px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.suggestion{
+    margin-block: 40px;
+    padding: 20px;
+    background-color:rgba(93, 220, 222, 0.807);
+    border-radius: 5px;
+}
+.suggestion textarea{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    box-shadow: 0 0 5px grey;
+}
+
+.mission{
+    margin-block: 40px;
+    padding: 20px;
+    background-color:steelblue;
+    border-radius: 5px;
+}
+
+
+
+/* media qurries */
+
+
+@media screen and (max-width: 991px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-toggle i{
+        font-size: 1.4rem;
+        transition: 0.2s ease-out;
+    }
+    .nav-toggle i:hover{
+        transform: scale(1.1);
+    }
+
+
+    .nav-links{
+        position: absolute;
+        background-color: rgba(143, 141, 141, 0.634);
+        backdrop-filter: blur(8px);
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+        text-align: center;
+        margin: 2px 0px 10px 0px;
+        border: 6px solid rgba(162, 162, 162, 0.56);
+
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 22px;
+    }
+    .nav-links a{
+        color: white;
+        padding: 6px;
+        margin-inline: 60px;
+        border-radius: 5px;
+    }
+    .nav-links a:hover{
+        background-image: linear-gradient(white, grey);
+        /* background-color: #FDFDFD; */
+        color: black;
+        
+    }
+    .header-img img{
+    width: 100%;
+    height: 425px;
+    object-fit: contain;
+    }
+
+    .about-heading{
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+    .about-heading h1{
+        font-size: 2.5rem;
+    }
+}
+    
+</style>
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="navbar-container flex">
+            <div class="nav-logo">
+                <h1> <span> Maharashtra’<span class="logo-s-colorchange">s</span></span>Rich Heritage</h1>
+                <!-- <img src="nav logo.png" alt=""> -->
+            </div>
+            <div class="nav-links flex" id="nav-links">
+                <a href="http://127.0.0.1:5500/MY%20HTML%20PROJECT/Maharashtra_Forts/forts-in-maharashtra.html#">Home</a>
+                <a href="http://127.0.0.1:5500/MY%20HTML%20PROJECT/Maharashtra_Forts/navlinks-code/about.html">About us</a>
+                <a href="">Menu</a>
+                <a href="">Service</a>
+                <a href="">Hotels</a>
+                <a href="">Locations</a>
+                <a href="">Pages</a>
+                <a href="">Contact us</a>
+                <div class="sign-btn">
+                    <button type="submit">Sign in</button>
+                </div>
+            </div>
+            <a href="#" class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </a>
+        </div>
+    </nav>
+
+    <header class="header-container  container">
+        <div class="header-img">
+            <img src="about-backgroundimg.jpg" alt="">
+        </div>
+        <div class="about-heading">
+            <h1>About Us</h1>
+        </div>
+    </header>
+
+    <main class="main-container container">
+        <div class="about-us">
+            <h2>About us</h2>
+            <p>
+                This site gives the information of all forts which are situated in Maharashtra state.It completes all over Maharashtra forts with detail information. All forts information is given by fort-wise. and in that all regions forts are cover like Pune, Lonavla, Raigad, Nashik, Satara etc..... <br>
+                Chatrapati Shivaji Maharaj Forts is the rich heritage of Maharashtra we request you keep our forts clean and free from garbage like bottles, any type of Plastic.  remeber that smoking and drinking is not allowed in any forts.
+            </p>
+        </div>
+
+        <div class="suggestion">
+            <h2>Suggestions</h2>
+            <textarea name="" id="" rows="7" cols="50"></textarea>
+        </div>
+
+        <div class="mission">
+            <h2>Mission</h2>
+            <p>
+                Our mission is to everyone knows about the Chatrapati Shivaji Maharaj Forts. this forts are symbols of cultural heritage and regional identity. but now days  many peoples are, for enjoining holidays go to the forts and Drinking and Smoking in a forts. peoples throws plastic bags, plastic bottles everywhere.<br>
+                Thats why we want strictly action against this. Someone identify for doing this give the warning of those peoples or inform the locals and police of that perticular area.
+            </p>
+        </div>
+        
+    </main>
+
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle')
+        const navLinks = document.getElementById('nav-links')
+        
+        toggleButton.addEventListener('click' , () => {
+           navLinks.classList.toggle('active');
+        })
+    </script> 
+
+</body>
+</html>
