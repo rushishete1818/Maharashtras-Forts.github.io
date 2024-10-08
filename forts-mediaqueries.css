@@ -1,0 +1,130 @@
+@media screen and (max-width: 991px){
+    .fort-box-img-container img{
+        width: calc(100% - 5px);
+        height: 200px;
+    }
+    .fort-box{
+        padding-inline: 0px;
+    }
+    .fort-box-img-container .fort-img img{
+        width: 320px;
+        height: 240px;
+    }
+    .forts-points-images img{
+        width: 580px;
+        height: 350px;
+    }
+    .fort-box h1{
+        font-size: 2rem;
+    }
+    .fort-box h3{
+        font-size: 1.2rem;
+    }
+    .fort-box h4{
+        font-size: 1rem;
+    }
+    .fort-box h2{
+        font-size: 1.3rem;
+    }
+    
+    .fort-box p{
+        font-size: 1rem;
+    }
+
+    .forts-names-container .names{
+        padding: 6px 15px;
+    }
+    .list-of-forts{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .header-container{
+        margin-bottom: 30px;
+        height: 50vh;
+    }
+
+    
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-toggle i{
+        font-size: 1.4rem;
+        transition: 0.2s ease-out;
+    }
+    .nav-toggle i:hover{
+        transform: scale(1.1);
+    }
+
+
+    .nav-links{
+        position: absolute;
+        background-color: rgba(143, 141, 141, 0.634);
+        backdrop-filter: blur(10px);
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+        text-align: center;
+        margin: 2px 0px 10px 0px;
+        border: 6px solid rgba(162, 162, 162, 0.56);
+
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+    .marquee.remove{
+        display: none;
+    }
+     
+    .nav-links{
+        flex-direction: column;
+        gap: 22px;
+    }
+    .nav-links a{
+        color: white;
+        padding: 6px;
+        margin-inline: 60px;
+        border-radius: 5px;
+    }
+    .nav-links a:hover{
+        background-image: linear-gradient(white, grey);
+        /* background-color: #FDFDFD; */
+        color: black;
+        
+    }
+    h2 .marquee{
+        padding-bottom: 30px;
+        padding-top: 7.5px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+
+    .nav-links a::after{
+        margin-top: -1px;
+    }
+    
+}
+
+@media screen and (max-width: 544px) {
+    .forts-points-images img{
+        width: 380px;
+        height: 250px;
+    }
+
+    .location img{
+        width: 380px;
+        height: 230px;
+    }
+    .nav-logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .fort-box-img-container .fort-img img{
+        width: 190px;
+        height: 170px;
+    }
+}

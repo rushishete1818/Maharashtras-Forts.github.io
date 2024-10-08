@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto" , sans-serif;
+    background-color: rgba(236, 235, 235, 0.6);
+}
+.container{
+    max-width: 1400px;
+    margin-inline: auto;
+    overflow: hidden;
+    background-color:#FDFDFD;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.container-main{
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-block: 35px;
+    padding-inline: 35px;
+    overflow: hidden;
+    background-color:#FDFDFD;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* nav bar */
+
+.navbar-container{
+    background-color: orange;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    min-width: 60vh;
+    position: relative;
+    z-index: 3;
+}
+.navbar-container a{
+    color: white;
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+/* .nav-logo img{
+    width: 250px;
+    margin-top: 10px;
+} */
+
+.nav-logo h1{
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.7rem;
+    font-weight:bold;
+}
+.nav-logo span{
+    color: #FDFDFD;
+}
+.nav-logo .logo-s-colorchange{
+    color: red;
+    font-size: 2rem;
+    margin-right: 3px;
+}
+
+.nav-links{
+    gap: 50px;
+}
+.nav-links a{
+    margin-top: 10px;
+    position: relative;
+}
+
+/* .nav-links a:focus{
+    text-decoration: underline;
+} */
+
+.nav-links ul{
+    min-width: 0px;
+}
+/* .nav-links a{
+    min-width: 100px;
+} */
+.nav-links a:hover{
+    color:rgba(128, 128, 128, 0.912);
+    transition: 0.4s ease;
+    transform: scale(1.1);
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-links a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    left: 0;
+    top: 100%;
+    background: white;
+    position: absolute;
+    margin-top: -7px;
+    transition: 0.5s;
+}
+.nav-links a:hover::after{
+   width: 100%;
+}
+
+.sign-btn button{
+    padding: 10px 22px;
+    margin-right: 10px;
+    background-color: #fdfdfd;
+    border: none;
+    outline: none;
+    color: orange;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 550;
+    transition: 0.1s ease;
+}
+.sign-btn button:hover{
+    background-color:cornflowerblue;
+    color: white;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1);
+}
+.sign-btn button:active{
+    background-color:rgb(49, 120, 253);
+}
+
+/* sign up page */
+
+.signPage{
+    background-color: #FDFDFD;
+    box-shadow: 0 0 6px grey;
+    position: absolute;
+    top: 9.5%;
+    right: 4%;
+    height: 450px;
+    width: 400px;
+    justify-content: center;
+    padding: 50px 5px 40px 5px;
+    border-radius: 10px;
+    display: none;
+    z-index: 5;
+}
+
+.signPage.activate{
+    display: block;
+    margin-right: 20px;
+}
+
+
+.signPage form{
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+}
+.signPage h1{
+    text-align: center;
+    color: #4383EE;
+}
+.signPage input{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 0 4px grey;
+    border: none;
+    outline: none;
+    padding-inline: 8px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.signPage .submit{
+    padding-block: 8px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(181, 7, 181);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+.signPage .submit:hover{
+    background-color: rgb(241, 66, 241);
+}
+
+/* header */
+
+.header-container{
+   height: 95vh;
+   margin-bottom: 30px;
+   border-bottom-left-radius: 12%;
+   border-bottom-right-radius: 12%;
+   position: relative;
+}
+.header-container img{
+    width: 100%;
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+}
+
+.list-of-forts{
+    padding: 10px 30px;
+    margin-top: 60px;
+    font-size: 2.2rem;
+    color: rgba(133, 132, 132, 0.934);
+    background-color: white;
+}
+
+.forts-names-container{
+    display: flex;
+    margin-block: 50px;
+    flex-wrap: wrap;
+    gap: 18px;
+    background-color:#FDFDFD;
+    padding: 30px 30px;
+}
+.forts-names-container .names{
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.forts-names-container .names:hover{
+    background-color: rgb(157, 156, 156);
+    box-shadow: 0 0 10px rgba(157, 156, 156);
+    transition: 0.2s ease;
+}
+.forts-names-container .names:active{
+    background-color: rgba(250, 114, 114, 0.738);
+    /* background-color:rgb(248, 122, 38); */
+    color: white;
+}
+.forts-names-container a{
+    color: #FDFDFD;
+}
+
+h2 .marquee{
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+
+/* main container */
+
+.fort-box{
+    flex-direction: column;
+    gap: 15px;
+    margin-block: 60px;
+}
+
+.fort-box h1{
+    color: orangered;
+    font-size: 2.4rem;
+}
+.fort-box h3{
+    font-size: 1.4rem;
+}
+.fort-box h4{
+    font-size: 1.2rem;
+}
+.fort-img{
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.fort-box-img-container {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 20px;
+}
+.fort-box-img-container .fort-img img{
+    width: 430px;
+    aspect-ratio: 2/2;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10 10 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.fort-box-img-container img:hover{
+    transform: scale(1.1);
+    transition: 0.9s ease;
+}
+
+.marathi-para{
+    margin-bottom: 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.marathi-para span{
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+
+.fort-box p{
+    font-size: 1.1rem;
+    color: grey;
+    line-height: 35px;
+    word-spacing: 3px;
+}
+.fort-box h2{
+    margin-bottom: 20px;
+    color: #023E8A;
+}
+.marathi-info h3{
+    margin-bottom: 10px;
+}
+.marathi-info .marathi-para{
+    font-size: 1.2rem;
+
+}
+
+.padding-zero{
+    padding: 0;
+}
+.go-top{
+    color: white;
+    font-weight: 550;
+    font-size: 1.1rem;
+    background-color: darkgray;
+    padding-block: 10px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+.go-top:hover{
+    background-color: #676666;
+    transition: 0.3s ease;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+.go-top:active{
+    background-color: tomato;
+}
+
+.marathi-info p{
+    text-align: left;
+}
+
+.forts-points-images img{
+    width: 700px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.forts-points-images-container img{
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+}
+.forts-points-images-container img:hover{
+    border:   10px solid  rgb(210, 210, 210);
+    border-radius: 20px;
+}
+
+.forts-points-images{
+    margin-bottom: 50px;
+}
+
+.dark-color{
+    font-size: 1.1rem;
+}
+
+.location img{
+    width: 450px;
+    height: 260px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    border: 2px solid grey;
+}
+.location h2{
+    color:#4383EE;
+}
+.location h3{
+    font-weight:0;
+}
+
+/* footer */
+
+.footer-container{
+    background-color: slategray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 60px;
+    margin-block: 20px;
+    margin-top: 50px;
+}
+.footer-container ul{
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.1rem;
+}
+
+.footer-left{
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.footer-left li:hover{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+.footer-left li:hover{
+    color: black;
+    text-decoration:  underline;
+}
+
+
+.footer-right{
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.footer-right i{
+    font-size: 1.6rem;
+    margin-top: 4px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 6px;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+.footer-right a{
+    gap: 20px;
+}
+.footer-right span{
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.footer-right .insta:hover{
+    color: white;
+    background-image: linear-gradient(to bottom right, purple,pink,red,orange);
+}
+.footer-right .facebook:hover{
+    color: #085ef2;
+}
+.footer-right .youtube:hover{
+    color: red;
+}
+.footer-right .whatsapp:hover{
+    background-color: rgb(41, 189, 41);
+    color: white;
+}
+.footer-right .x:hover{
+    background-color: black;
+    color: white;
+}
+
+.footer-right span:hover{
+    color: black;
+    text-decoration: underline;
+}
