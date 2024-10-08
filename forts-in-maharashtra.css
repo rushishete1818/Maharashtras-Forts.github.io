@@ -18,7 +18,7 @@ body{
     max-width: 1400px;
     margin-inline: auto;
     padding-block: 35px;
-    padding-inline: 35px;
+    padding-inline: 15px;
     overflow: hidden;
     background-color:#FDFDFD;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
