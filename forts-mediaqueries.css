@@ -127,4 +127,38 @@
         width: 190px;
         height: 170px;
     }
+    .navbar-container{
+       min-width: 100%;
+    }
+    .nav-logo{
+        min-width: 80%;
+    }
+    .nav-logo h1{
+        font-size: 1.3rem;
+    }
+    .header-container{
+        height: 28vh;
+    }
+}
+@media screen and (max-width: 431px) {
+    .forts-points-images img{
+        width: 280px;
+        height: 150px;
+    }
+
+    .location img{
+        width: 180px;
+        height: 130px;
+    }
+    .nav-logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .fort-box-img-container .fort-img img{
+        width: 170px;
+        height: 150px;
+    }
+    .fort-box h1{
+        font-size: 1.5rem;
+    }
 }
