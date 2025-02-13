@@ -274,6 +274,7 @@ h2 .marquee{
 }
 .fort-box h4{
     font-size: 1.2rem;
+    margin-bottom: 8px;
 }
 .fort-img{
     overflow: hidden;
