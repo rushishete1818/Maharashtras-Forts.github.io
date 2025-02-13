@@ -111,13 +111,13 @@
 
 @media screen and (max-width: 544px) {
     .forts-points-images img{
-        width: 380px;
-        height: 250px;
+        width: 360px;
+        height: 230px;
     }
 
     .location img{
-        width: 380px;
-        height: 230px;
+        width: 200px;
+        height: 120px;
     }
     .nav-logo h1 {
         font-size: 1.5rem;
